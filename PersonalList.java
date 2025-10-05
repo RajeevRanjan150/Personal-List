@@ -3,7 +3,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 class PersonalList
   {
-    // Declaring ArrayLisg and Scanner class.
+    // Declaring ArrayList and Scanner class.
     static ArrayList<String> list=new ArrayList<String>();
     static Scanner sc=new Scanner(System.in);
     // Method for adding values.
