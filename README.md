@@ -10,4 +10,6 @@ Run:
 javac PersonalList.java
 java PersonalList
 
+NOTE: This is just a prototype for my upcoming programs.
+
 //Gonna implemet it soon on my Expense Tracker Program.
