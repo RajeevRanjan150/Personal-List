@@ -21,8 +21,14 @@ class PersonalList
       }
       System.out.print("Remove: ");
       int remove=sc.nextInt();
+      if(remove<=list.size()&&remove>0) {
       list.remove(remove-1);
       System.out.println(remove+" has been removed!");
+      }
+      else {
+        System.out.println("Invalid input!");
+        return;
+      }
     }
     // Method for changing values.
     public static void change()
@@ -32,10 +38,16 @@ class PersonalList
       }
       System.out.print("Number: ");
       int idx=sc.nextInt();
+      if(idx<=size.length&&idx>0) {
       System.out.print("Change: ");
       String change=sc.nextLine();
       list.set(idx-1, change);
       System.out.println("Changed Successfully!");
+      }
+      else {
+        System.out.println("Invalid input!");
+        return;
+      }
     }
     // Method for showing all values one-by-one.
     public static void show()
