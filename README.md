@@ -1,4 +1,4 @@
-# PersonalList-List
+# Personal-List
 Simple console-based personal list manager written in Java.
 Features:
 - Add items
