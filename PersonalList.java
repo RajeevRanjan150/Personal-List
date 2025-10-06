@@ -52,7 +52,7 @@ class PersonalList
       try {
       System.out.print("Number: ");
       int idx=sc.nextInt();
-      if(idx<=size.length&&idx>0) {
+      if(idx<=list.size()&&idx>0) {
       System.out.print("Change: ");
       String change=sc.nextLine();
       list.set(idx-1, change);
