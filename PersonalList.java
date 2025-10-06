@@ -98,7 +98,7 @@ class PersonalList
           case 5: System.out.println("Exiting..."); return;
           default: System.out.println("Invalid Choice!");
         }
-        } catch (Excpetion e) {
+        } catch (Exception e) {
           System.out.println(e.getMessage());
       }
     }
