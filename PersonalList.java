@@ -16,9 +16,14 @@ class PersonalList
     // Method for removing values.
     public static void remove()
     {
+      if(list.isEmpty()) {
+        System.out.println("List is empty.");
+        return;
+      }
       for(int i=0; i<list.size(); i++) {
         System.out.println((i+1)+". "+list.get(i));
       }
+      try {
       System.out.print("Remove: ");
       int remove=sc.nextInt();
       if(remove<=list.size()&&remove>0) {
@@ -29,13 +34,22 @@ class PersonalList
         System.out.println("Invalid input!");
         return;
       }
+      } catch (Exception e) {
+        System.out.println(e.getMessage());
+        return;
+      }
     }
     // Method for changing values.
     public static void change()
     {
+      if(list.isEmpty()) {
+        System.out.println("List is empty.");
+        return;
+      }
       for(int i=0; i<list.size(); i++) {
         System.out.println((i+1)+". "+list.get(i));
       }
+      try {
       System.out.print("Number: ");
       int idx=sc.nextInt();
       if(idx<=size.length&&idx>0) {
@@ -48,10 +62,18 @@ class PersonalList
         System.out.println("Invalid input!");
         return;
       }
+      } catch (Exception e) {
+        System.out.println(e.getMessage());
+        return;
+      }
     }
     // Method for showing all values one-by-one.
     public static void show()
     {
+      if(list.isEmpty()) {
+        System.out.println("List is empty.");
+        return;
+      }
       for(int i=0; i<list.size(); i++) {
         System.out.println((i+1)+". "+list.get(i));
       }
@@ -64,6 +86,7 @@ class PersonalList
       System.out.print("1. Add\n2. Remove\n3. Change\n4. Show List\n5. Exit");
       int choice=0;
       while(true) {
+        try {
        System.out.print("\nEnter choice: ");
        choice=sc.nextInt();
         sc.nextLine();
@@ -75,6 +98,8 @@ class PersonalList
           case 5: System.out.println("Exiting..."); return;
           default: System.out.println("Invalid Choice!");
         }
+        } catch (Excpetion e) {
+          System.out.println(e.getMessage());
       }
     }
   }
